@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@200;300;400;500;600&display=swap');
+
+*{
+    font-family: 'Muli', sans-serif;
+}
+
+body{
+    background: #FAF9FF;
+}
+
+/* navbar */
+.navbar{
+    padding-left: 0px !important;
+}
+
+.navbar-brand{
+    font-family: 'Aladin', cursive;
+    font-size: 3rem;
+    line-height: 61px;
+    padding-top: 50px;
+    padding-left: 100px;
+}
+
+@media (max-width: 576px) {
+    .navbar-brand{
+        padding-left: 15px;
+        padding-top: 20px;
+        font-size: 3rem;
+    }
+}
+
+/* hero */
+.hero__section{
+    width: 100%;
+    padding: 88px 100px 50px 100px;
+}
+
+.hero__text{
+    font-family: Muli;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 56px;
+    line-height: 84px;
+    color: #3A3A3A;
+}
+
+.form__text{
+    font-family: Muli;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 35px;
+    line-height: 44px;
+}
+
+.form__btn{
+    background: #8388E4;
+    border-radius: 5px;
+    color: white;
+    padding: 24px 96px 23px 97px;
+}
+
+.form__input{
+    padding: 26px;
+    background: rgba(131, 136, 228, 0.1);
+    border-radius: 5px;
+}
+
+@media (max-width: 576px) {
+    .hero__section{
+        width: 100%;
+        padding: 20px 15px 20px 15px;
+    }
+}
+/* hero */
+
+/* footer */
+.footer_form__section{
+    background: #8388E4;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.footer_form__subtittle{
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.7);;
+}
+
+.footer_form__title{
+    color: white;
+    font-weight: 600;
+}
+
+.ff__input{
+    padding: 26px;
+    background-color: white;
+    color: rgba(58, 58, 58, 0.7);
+}
+
+.ff__btn{
+
+}
+
+.footer{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.footer-brand, .footer-brand:hover {
+    font-family: 'Aladin', cursive;
+    font-size: 3rem;
+    line-height: 61px;
+    color: black;
+    text-decoration: none;
+}
+
+.social_icon__wrapper{
+    display: -webkit-inline-box;
+    float: right;
+}
+
+.social__icon{
+    color: #8388E4;
+    font-size: 2rem;
+}
+
+@media (max-width: 576px) {
+    .footer{
+        padding-left: 15px;
+        padding-right: 15px;
+        
+    }
+}
