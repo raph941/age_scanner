@@ -116,7 +116,11 @@ body{
         display: inherit;
     }
     .hero__img{
-        width: 300px;
+        height: 300px;
+    }
+    .hero_media__wrapper{
+        display: flex;
+        justify-content: center;
     }
     .form__section{
         width: 100%;
@@ -329,6 +333,11 @@ body{
     .nav__vector{
         width: 150px;
     }
+    .form__section{
+        margin-top: 55px;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
     .form__title {
         font-size: 1.6rem;
     }
@@ -360,4 +369,9 @@ body{
     .footer{
         padding: 15px 50px 15px 50px !important;
     }
+}
+
+/* Small devices (landscape phones, 576px and up)  */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    
 }
