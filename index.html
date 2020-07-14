@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" >
     <!--custom css-->
     <link rel="stylesheet" href="./css/style.css">
 
@@ -13,24 +13,34 @@
   </head>
   <body>
     <!-- Image and text -->
-    <nav class="navbar navbar-light">
-        <a class="navbar-brand" href="#">
+    <nav class="navigator">
+        <a class="navbar-brand mr-auto" href="#">
             Agereal
         </a>
+
+        <img class="nav__vector d-none d-sm-block" src="./images/vectors/nav_vect.svg" style="float: right;position: sticky;"/>
+        <img class="nav__vector d-block d-sm-none" src="./images/vectors/nav_vect.svg" style="float: right;position: sticky;width: 150px;"/>
     </nav>
 
-    <section class="d-flex hero__section ">
-        <div class="row">
-            <div class="hero__text col-12 col-sm-6">
-                Determine the age of any individual with your mobile device
+    <img class="dot__img1" src="./images/vectors/Group33.png" />
+
+    <section class="hero__section ">
+        <div class="media">
+            <div class="media-body col-12 col-sm-6 align-self-center">
+                <p class="hero__text">Determine the age of any individual with your mobile device.</p>
             </div>
-            <div class="hero__img col-12 col-sm-6">
-                <img src="./images/phone3.svg" />
-            </div>
+            <br>
+            <span class="col-12 col-sm-6">
+                <img class="align-self-center mr-3 hero__img" src="./images/phone3.svg" alt="Generic placeholder image">
+            </span>
         </div>
     </section>
-    <div class="form__wrapper justify-content-center">
-        <h4 class="form__tittle text-center">
+
+    <img class="d-none d-sm-block dot__img2" src="./images/vectors/Group32.png" />
+
+    <!-- notification form starts -->
+    <div class="form__section justify-content-center">
+        <h4 class="form__title text-center">
             Be aware of the Launching !!!
         </h4>
         <br>
@@ -38,9 +48,36 @@
             <input placeholder="email" class="form__input" />
             <button class="btn form__btn">Notify me</button>
         </form>
-    </div>
+    </div> -->
+    <!-- notification form ends -->
 
-    <section class="footer_form__section ">
+    <!-- How it works section start -->
+    <section class="hwiw__section">
+        <p class="hwiw__title text-center">
+          How It Works  
+        </p>
+
+        <!-- <div class="media">
+            <span class="mr-3 col-12 col-sm-6">
+                <img src="./images/how-it-works/phone.svg" alt="Generic placeholder image">
+            </span>
+            <div class="col-12 col-sm-6 ">
+              <span class="hwiw-media__text">
+                <i class="fa fa-camera" aria-hidden="true"></i>
+                <h3 class="mt-0 pl-0 col-12 col-sm-6">Capturing</h3>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis nibh sed congue id erat urna, tincidunt blandit eu.
+              </span>
+              <span >
+                <i class="fa fa-camera" aria-hidden="true"></i>
+                <h3 class="mt-0 pl-0 col-12 col-sm-6">Capturing</h3>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis nibh sed congue id erat urna, tincidunt blandit eu.
+              </span>
+            </div>
+          </div> -->
+    </section>
+    <!-- how it works section end -->
+
+    <!-- <section class="footer_form__section ">
         <h4 class="footer_form__subtittle text-center">
             Our free website is coming soon.
         </h4>
@@ -52,29 +89,29 @@
             <button type="submmit" class="btn ff_btn">Notify me</button>
         </form>
         
-    </section>
+    </section> -->
 
 
     <!--footer-->
-    <footer class=" d-flex footer d-none">
+    <!-- <footer class=" d-flex footer d-none">
         <a class="footer-brand mr-auto" href="#">
             Agereal
-        </a>
+        </a> -->
 
         <!--social icons-->
-        <div class="d-flex flex-row align-self-center social_icon__wrapper justify-space-between">
+        <!-- <div class="d-flex flex-row align-self-center social_icon__wrapper justify-space-between">
             <a href="#"><i class="fab fa-instagram social__icon"></i></a>
             <a href="#"><i class="fab fa-twitter social__icon" style="padding: 0px 20px 0px 20px;"></i></a>
             <a href="#"><i class="fab fa-linkedin social__icon"></i></a>
         </div>
-    </footer>
+    </footer> -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://use.fontawesome.com/releases/v5.13.1/js/all.js" data-auto-replace-svg="nest"></script>
+    <script src="./assets/jquery/jquery.slim.js" ></script>
+    <script src="./assets/popper/popper.js" ></script>
+    <script src="./assets/bootstrap/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./assets/font-awsome/all.js" data-auto-replace-svg="nest"></script>
     <!--custom js-->
     <script src="./js/main.js"></script>
   </body>
