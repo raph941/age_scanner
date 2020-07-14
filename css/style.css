@@ -150,7 +150,12 @@ body{
         -webkit-text-stroke-color: rgba(58, 58, 58, 0.3);
     }
     @media (max-width: 576px) {
-
+        .hwiw__title{
+        }
+        .hwiw__section{
+            padding-left: 15px;
+            padding-right: 15px;
+        }
     }
     @media (min-width: 576px) {
         .hwiw__title{
