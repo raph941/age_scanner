@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Muli:wght@200;300;400;500;600&display=swap');
 
+
+html, body {width: auto!important; overflow-x: hidden!important} 
+
 *{
     font-family: 'Muli', sans-serif;
 }
@@ -10,9 +13,6 @@ body{
 }
 
 /* navbar */
-.navigator{
-
-}
 
 .navbar-brand{
     font-family: 'Aladin', cursive;
@@ -123,7 +123,7 @@ body{
     .form__input{
         background: rgba(131, 136, 228, 0.1);
         border: 0px;
-        border-radius: px;
+        border-radius: 5px;
         padding: 10px;
         width: px;
         margin-right: 5px;
@@ -132,6 +132,9 @@ body{
     .form__btn, .form__btn:hover{
         background: #8388E4;
         color: white;
+        font-size: 15px;
+        line-height: 15px;
+        padding: 13px;
     }
 }
 /* hero */
@@ -149,26 +152,44 @@ body{
         -webkit-text-stroke: 2px;
         -webkit-text-stroke-color: rgba(58, 58, 58, 0.3);
     }
+    .hwiw__subtitle{
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 44px;
+    }
+    .hwiw__icon{
+        padding-bottom: 1rem;
+    }
     @media (max-width: 576px) {
-        .hwiw__title{
-        }
         .hwiw__section{
             padding-left: 15px;
             padding-right: 15px;
         }
-    }
-    @media (min-width: 576px) {
         .hwiw__title{
-            font-size: 11rem;
+            font-size: -webkit-xxx-large;
+            line-height: 70px;
         }
+        .hwiw__subtitle{
+            margin-bottom: 24px;
+        }
+        .hwiw_text__wrapper{
+            text-align: center;
+            margin-top: 80px;
+        }
+    }
+    @media (min-width: 768px) {
+        .hwiw__title{
+            font-size: 8rem;
+        }
+    }
+    @media (min-width: 992px) {
+       
     }
 /* how it work ends */
 
 /* footer */
 .footer_form__section{
     background: #8388E4;
-    padding-top: 80px;
-    padding-bottom: 80px;
 }
 
 .footer_form__subtittle{
@@ -188,14 +209,64 @@ body{
     color: rgba(58, 58, 58, 0.7);
 }
 
-.ff__btn{
-
+@media (max-width: 576px) {
+    .footer_form__section{
+        margin-top: 80px;
+        padding: 40px 15px 40px 15px;
+    }
+    .ff__input{
+        border: 0px;
+        border-radius: 5px;
+        padding: 10px;
+        width: px;
+        margin-right: 5px;
+    }
+    .ff__btn{
+        background: #F05050;
+        color: white;
+        font-size: 15px;
+        line-height: 15px;
+    }
+    .footer_form__title{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .footer_form__subtittle{
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+@media (min-width: 576px) {
+    .footer_form__section{
+        margin-top: 120px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .ff__input{
+        padding: 15px;
+        border: 0px;
+        border-radius: 5px;
+        width: 600px;
+        margin-right: 15px;
+        font-size: 22px;
+        line-height: 33px;
+        color: rgba(58, 58, 58, 0.7);
+    }
+    .ff__btn{
+        background: #F05050;
+        border-radius: 5px;
+        color: white;
+        padding: 15px 96px 15px 97px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 33px;
+    }
 }
 
-.footer{
-    padding-left: 100px;
-    padding-right: 100px;
-}
 
 .footer-brand, .footer-brand:hover {
     font-family: 'Aladin', cursive;
@@ -217,8 +288,23 @@ body{
 
 @media (max-width: 576px) {
     .footer{
-        padding-left: 15px;
-        padding-right: 15px;
+        padding: 24px 15px 0px 15px;       
+    }
+    .footer-brand{
+        justify-content: center;
+        font-size: 1.9rem;
+        line-height: 37px;
+    }
+    .social_icon__wrapper {
+        width: -webkit-fill-available;
+        justify-content: center;
+        margin-bottom: 24px;
+    }
+}
+
+@media (min-width: 576px) {
+    .footer{
+        padding: 30px 100px 30px 100px;
         
     }
 }
