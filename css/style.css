@@ -207,6 +207,8 @@ body{
         padding-left: 100px;
         padding-right: 100px;
     }
+    .slick-slide{
+    }
 }
 .dot__wrapper{
     list-style: none;
