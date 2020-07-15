@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Muli:wght@200;300;400;500;600&display=swap');
 
 
-html, body {width: auto!important; overflow-x: hidden!important} 
 
 *{
     font-family: 'Muli', sans-serif;
@@ -64,6 +63,7 @@ body{
     }
     .hero__img{
         float: right;
+        width: 300px;
     }
     .hero__text{
         font-family: Muli;
@@ -150,13 +150,14 @@ body{
         padding-left: 100px;
         padding-right: 100px;
     }
-    .hwiw__title{
+    .large__title{
         font-weight: 600;
         line-height: 251px;
         color: black;
         -webkit-text-fill-color: white;
         -webkit-text-stroke: 2px;
         -webkit-text-stroke-color: rgba(58, 58, 58, 0.3);
+        font-size: 8rem;
     }
     .hwiw__subtitle{
         font-weight: 600;
@@ -171,7 +172,7 @@ body{
             padding-left: 15px;
             padding-right: 15px;
         }
-        .hwiw__title{
+        .large__title{
             font-size: -webkit-xxx-large;
             line-height: 70px;
         }
@@ -182,8 +183,86 @@ body{
             text-align: center;
             margin-top: 80px;
         }
+        .hwiw__image{
+            width: 300px;
+        }
+    }
+    @media (min-width: 997px) {
+        .hwiw__image{
+            width: 400px;
+        }
     }
 /* how it work ends */
+
+/* Screens Section */
+@media (max-width: 576px) {
+    .screens__section{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (min-width: 576px) {
+    .screens__section{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+.dot__wrapper{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.carousel__wrapper{
+    display: flex;
+}
+.slick-arrow, .slick-arrow:hover, .slick-arrow:focus{
+    border: 0px;
+    background-color: #faf9ff;
+}
+
+/* Screens Section */
+
+/* Prototype Section */
+@media (max-width: 576px) {
+    .prototype__section{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .prototype_img__wrapper{
+        background-color: black;
+        margin-top: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .prototype__img{
+        width: 90px;
+    }
+}
+
+@media (min-width: 576px) {
+    .prototype__section{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .prototype_img__wrapper{
+        background-color: black;
+        margin-top: 50px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        display: flex;
+        justify-content: center;
+    }
+    .prototype__img{
+        width: 278px;
+    }
+
+}
+
+
+/* Prototype Section */
 
 /* footer */
 .footer_form__section{
@@ -315,6 +394,10 @@ body{
         padding-left: 50px;
         padding-right: 50px;
     }
+    .screens__section{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
     .hero__text{
         font-size: 1.8rem;
     }
@@ -347,13 +430,20 @@ body{
     .form__btn, .form__btn:hover{
         padding: 13px 20px 13px 20px;
     }
-    .hwiw__title{
+    .large__title{
         font-size: 5.5rem;
         line-height: 120px !important;
     }
     .hwiw__section {
         padding-left: 50px !important;
         padding-right: 50px !important;
+    }
+    .screens__section{
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+    }
+    .hwiw__image{
+        width: 300px;
     }
     .footer_form__section {
         margin-top: 80px !important;
@@ -368,6 +458,21 @@ body{
     }
     .footer{
         padding: 15px 50px 15px 50px !important;
+    }
+    .prototype__section{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .prototype_img__wrapper{
+        background-color: black;
+        margin-top: 30px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    .prototype__img{
+        width: 230px;
     }
 }
 
