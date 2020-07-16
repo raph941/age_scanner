@@ -44,6 +44,10 @@
         <div class="media">
             <div class="media-body col-12 col-sm-6 align-self-center">
                 <p class="hero__text">Determine the age of any individual with your mobile device.</p>
+                <span class="hero_btn__wrapper">
+                    <a href="#notify" class="btn hero_primary_btn">Notify me</a>
+                    <a href="#prototype" class="btn btn-outline-secondary hero_secondary_btn">Watch Prototype</a>
+                </span>
             </div>
             <br>
             <span class="col-12 col-sm-6 hero_media__wrapper">
@@ -63,7 +67,7 @@
         <br>
         <form id="form" class="text-center">
             <input name="email" id="email" placeholder="your email.." class="form__input" />
-            <button class="btn form__btn">Notify me</button>
+            <button class="btn form__btn" id="notify">Notify me</button>
             
             <div class="alert__wrapper">
                 
@@ -87,16 +91,21 @@
                     <img class="hwiw__icon" src="./images/icons/Group80.png" alt="icon"><br>
                     <h3 class="mt-0 pl-0 col-12 col-sm-6 hwiw__subtitle">Capturing</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis nibh sed congue id erat urna,
-                        tincidunt blandit eu.
+                        This stage takes an image of a person whom is in the focus of the camera or and gets the features of the face.
                     </p>
                 </span><br>
                 <span class="hwiw-media__text">
                     <img class="hwiw__icon" src="./images/icons/Group81.png" alt="icon">
-                    <h3 class="mt-0 pl-0 col-12 col-sm-6 hwiw__subtitle">Capturing</h3>
+                    <h3 class="mt-0 pl-0 col-12 col-sm-6 hwiw__subtitle">Scanning</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis nibh sed congue id erat urna,
-                        tincidunt blandit eu.
+                        During this the image taken or an existing image in the gallery is scanned to identfy the age of the individual within the picture.
+                    </p>
+                </span><br>
+                <span class="hwiw-media__text">
+                    <img class="hwiw__icon" src="./images/icons/process.png" alt="icon">
+                    <h3 class="mt-0 pl-0 col-12 col-sm-6 hwiw__subtitle">Processing</h3>
+                    <p>
+                        This takes into all accounts all the features of the face that tells a persons age starting from the eyes, cheeks and lips and analyses the age from there.
                     </p>
                 </span>
             </div>
@@ -116,10 +125,10 @@
                 <div class="swiper-slide"><img class="slider__img" src="./images/screens/screens1.svg" /></div>
                 <div class="swiper-slide"><img class="slider__img" src="./images/screens/screens2.svg" /></div>
                 <div class="swiper-slide"><img class="slider__img" src="./images/screens/screens3.svg" /></div>
+                <div class="swiper-slide"><img class="slider__img" src="./images/screens/screens4.svg" /></div>
                 <div class="swiper-slide"><img class="slider__img" src="./images/screens/screens1.svg" /></div>
                 <div class="swiper-slide"><img class="slider__img" src="./images/screens/screens2.svg" /></div>
                 <div class="swiper-slide"><img class="slider__img" src="./images/screens/screens3.svg" /></div>
-                <div class="swiper-slide"><img class="slider__img" src="./images/screens/screens1.svg" /></div>
 
             </div>
             <!-- If we need pagination -->
@@ -145,10 +154,10 @@
                 <!-- Slides -->
                 <div class="swiper-slide"><img class="slider__img" src="./images/dark-mode/phone1.svg" /></div>
                 <div class="swiper-slide"><img class="slider__img" src="./images/dark-mode/phone2.svg" /></div>
+                <div class="swiper-slide"><img class="slider__img" src="./images/dark-mode/phone3.svg" /></div>
                 <div class="swiper-slide"><img class="slider__img" src="./images/dark-mode/phone1.svg" /></div>
                 <div class="swiper-slide"><img class="slider__img" src="./images/dark-mode/phone2.svg" /></div>
-                <div class="swiper-slide"><img class="slider__img" src="./images/dark-mode/phone1.svg" /></div>
-                <div class="swiper-slide"><img class="slider__img" src="./images/dark-mode/phone2.svg" /></div>
+                <div class="swiper-slide"><img class="slider__img" src="./images/dark-mode/phone3.svg" /></div>
                 <div class="swiper-slide"><img class="slider__img" src="./images/dark-mode/phone1.svg" /></div>
 
             </div>
@@ -166,11 +175,15 @@
 
 
     <!-- prototpe section starts -->
-    <section class="prototype__section">
+    <section class="prototype__section" id="prototype">
         <p class="large__title text-center">Prototype </p>
-        <div class="prototype_img__wrapper">
+        <!-- <div class="prototype_img__wrapper">
             <img class="prototype__img" src="./images/prototype/prototype.svg" alt="prototype" />
-        </div>
+        </div> -->
+
+        <video class="prototype_img__wrapper" controls>
+            <source src="./video/hng.mp4" type="video/mp4">
+        </video>
 
     </section>
     <!-- prototype section end -->
