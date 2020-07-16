@@ -44,8 +44,8 @@ gsap.from(".nav__vector", {duration: 2, y: -300, opacity: 0});
 
 gsap.from(".dot__img1", {duration: 3, x: -300, opacity: 0, scale: 0.5});
 
-gsap.from(".hwiw__imgage", {
+gsap.from(".hwiw__image", {
   scrollTrigger: ".hwiw__imgage", // start the animation when ".hwiw__imgage" enters the viewport (once)
-  x: 500
+  duration: 3, x: 00
 });
 

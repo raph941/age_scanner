@@ -16,6 +16,16 @@
 </head>
 
 <body>
+    <!-- Alert Start -->
+    <div class="alert__wrapper"></div>
+    <div class="alert alert-dismissible alert-danger fade show d-none" role="alert">
+        Your email has been succesful submiitted. you would be notified when we kick off.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <!-- Alert Ends -->
+
     <!-- Image and text -->
     <nav class="navigator">
         <a class="navbar-brand mr-auto" href="#">
@@ -54,6 +64,10 @@
         <form id="form" class="text-center">
             <input name="email" id="email" placeholder="your email.." class="form__input" />
             <button class="btn form__btn">Notify me</button>
+            
+            <div class="alert__wrapper">
+                
+            </div>
         </form>
     </div>
     <!-- notification form ends -->
@@ -171,6 +185,7 @@
         <form id="form" class="d-flex justify-content-center" >
             <input name="email" id="email" placeholder="your email.." class="ff__input" required />
             <button type="submmit" class="btn ff__btn">Notify me</button>
+            
         </form>
 
     </section>
@@ -196,9 +211,7 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="./assets/popper/popper.js"></script>
-    <script src="./assets/bootstrap/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+    <script src="./assets/bootstrap/bootstrap.min.js" ></script>
     <script src="./assets/font-awsome/all.js" data-auto-replace-svg="nest"></script>
     <!-- Swipper JS -->
     <script src="./assets/swiper/swiper.min.js"></script>
@@ -208,29 +221,28 @@
     <!--custom js-->
     <script src="./js/main.js"></script>
     <script>
-    gsap.to(".hero__img", {duration: 3, rotationX: 360});
 
-    $(document).ready(function() {
-        $('#form').submit(function(e){
-            e.preventDefault();
-            var story_id = $('#email').val()
-    
-            $.ajax({
-            url: 'action.php',
-            method: "POST",
-            data: {
-                "emali":email,
-            },
-            beforeSend: function() {
-                console.log('before send')
-            },
-            complete: function() {
-                console.log('completed')
-            },
-            success: function(data){
-                console.log("success")
-            },
-            })
+    $('#form').submit(function(e){
+        e.preventDefault();
+        var email = $('#email').val()
+
+        $.ajax({
+        url: 'action.php',
+        method: "POST",
+        data: {
+            'email': email
+        },
+        success: function(data){
+            $('.alert__wrapper').html(
+                '<div class="alert alert-success alert-dismissible fade show" role="alert">Your email has been succesful submiitted. you would be notified when we kick off.<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>'
+            )
+        },
+        error: function(data){
+            $('.alert__wrapper').html(
+                '<div class="alert alert-danger alert-dismissible fade show" role="alert">An error occur during your email submission. please try again.<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>'
+
+            )
+        },
         })
     })
     </script>
