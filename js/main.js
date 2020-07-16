@@ -35,16 +35,17 @@
       }
     })
 
-// var swiper = new swiper('.swiper-container', {
-//     slidesPerView: 3,
-//     spaceetween: 50,
-//     loop: true,
-//     pagination: {
-//         el: '.swiper-pgination',
-//         clickable: true,
-//     },
-//     navigation: {
-//         nextEl: '.swiper-button-next',
-//         prevEl: '.swiper-button-prev',
-//     },
-// })
+// Animations
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.from(".hero__img", {duration: 4, x: 00, opacity: 0, scale: 0.5});
+gsap.from(".dot__img2", {duration: 2, x: 300, opacity: 0, scale: 0.5});
+gsap.from(".nav__vector", {duration: 2, y: -300, opacity: 0});
+
+gsap.from(".dot__img1", {duration: 3, x: -300, opacity: 0, scale: 0.5});
+
+gsap.from(".hwiw__imgage", {
+  scrollTrigger: ".hwiw__imgage", // start the animation when ".hwiw__imgage" enters the viewport (once)
+  x: 500
+});
+
