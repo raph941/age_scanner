@@ -51,8 +51,8 @@
             Be aware of the Launching !!!
         </h4>
         <br>
-        <form class="text-center">
-            <input placeholder="your email.." class="form__input" />
+        <form id="form" class="text-center">
+            <input name="email" id="email" placeholder="your email.." class="form__input" />
             <button class="btn form__btn">Notify me</button>
         </form>
     </div>
@@ -168,8 +168,8 @@
         <h1 class="footer_form__title text-center">
             Get notified when it arrives!!!
         </h1>
-        <form class="d-flex justify-content-center">
-            <input placeholder="your email.." class="ff__input" required />
+        <form id="form" class="d-flex justify-content-center" >
+            <input name="email" id="email" placeholder="your email.." class="ff__input" required />
             <button type="submmit" class="btn ff__btn">Notify me</button>
         </form>
 
@@ -194,7 +194,7 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="./assets/jquery/jquery.slim.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="./assets/popper/popper.js"></script>
     <script src="./assets/bootstrap/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
@@ -202,8 +202,37 @@
     <script src="./assets/font-awsome/all.js" data-auto-replace-svg="nest"></script>
     <!-- Swipper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- GSAP animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
     <!--custom js-->
     <script src="./js/main.js"></script>
+    <script>
+    gsap.to(".hero__img", {duration: 3, rotationX: 360});
+
+    $(document).ready(function() {
+        $('#form').submit(function(e){
+            e.preventDefault();
+            var story_id = $('#email').val()
+    
+            $.ajax({
+            url: 'action.php',
+            method: "POST",
+            data: {
+                "emali":email,
+            },
+            beforeSend: function() {
+                console.log('before send')
+            },
+            complete: function() {
+                console.log('completed')
+            },
+            success: function(data){
+                console.log("success")
+            },
+            })
+        })
+    })
+    </script>
 </body>
 
 </html>
