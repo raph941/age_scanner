@@ -10,7 +10,7 @@
 $server = 'sql12.freesqldatabase.com';
 $user = 'sql12355372';
 $password = 'iz21ameaFz';
-$database = 'sql12355372'
+$database = 'sql12355372';
 
 $conn= mysqli_connect($server,$user,$password,$database);
 
