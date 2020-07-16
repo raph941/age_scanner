@@ -1,13 +1,19 @@
 <?php
 
-$server = 'localhost';
-$user = 'root';
-$password = '';
-$database = 'test';
+//LOCAL
+// $server = 'localhost';
+// $user = 'root';
+// $password = '';
+// $database = 'test';
+
+//heroku
+$server = 'sql12.freesqldatabase.com';
+$user = 'sql12355372';
+$password = 'iz21ameaFz';
+$database = 'sql12355372'
+
 $conn= mysqli_connect($server,$user,$password,$database);
 
-// $content_raw = file_get_contents("php://input");
-// $decoded_data = json_decode($content_raw, true);
 $email = $_POST['email'];
 
 $str = "INSERT INTO email(email) 
