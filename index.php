@@ -141,7 +141,7 @@
                     </a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="./images/screens/screen5.svg" data-lightbox="Slide5" data-title="All Scannes">
+                    <a href="./images/screens/screen5.svg" data-lightbox="Slide5" data-title="Scan History">
                         <img class="slider__img" src="./images/screens/screen5.svg" />
                     </a>
                 </div>
@@ -185,32 +185,32 @@
                 <!-- Slides -->
 
                 <div class="swiper-slide">
-                    <a href="./images/dark-mode/phone1.svg" data-lightbox="dark1" data-title="Dark Mode 1">
+                    <a href="./images/dark-mode/phone1.svg" data-lightbox="dark1" data-title="Image Selection">
                         <img class="slider__img" src="./images/dark-mode/phone1.svg" />
                     </a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="./images/dark-mode/phone2.svg" data-lightbox="dark2" data-title="Dark Mode 2">
+                    <a href="./images/dark-mode/phone2.svg" data-lightbox="dark2" data-title="Image Scann">
                         <img class="slider__img" src="./images/dark-mode/phone2.svg" />
                     </a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="./images/dark-mode/phone3.svg" data-lightbox="dark3" data-title="Dark Mode 3">
+                    <a href="./images/dark-mode/phone3.svg" data-lightbox="dark3" data-title="Scann History">
                         <img class="slider__img" src="./images/dark-mode/phone3.svg" />
                     </a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="./images/dark-mode/phone1.svg" data-lightbox="dark4" data-title="Dark Mode 4">
+                    <a href="./images/dark-mode/phone1.svg" data-lightbox="dark4" data-title="Image Selection">
                         <img class="slider__img" src="./images/dark-mode/phone1.svg" />
                     </a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="./images/dark-mode/phone2.svg" data-lightbox="dark5" data-title="Dark Mode 5">
+                    <a href="./images/dark-mode/phone2.svg" data-lightbox="dark5" data-title="Image Scan">
                         <img class="slider__img" src="./images/dark-mode/phone2.svg" />
                     </a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="./images/dark-mode/phone3.svg" data-lightbox="dark6" data-title="Dark Mode 6">
+                    <a href="./images/dark-mode/phone3.svg" data-lightbox="dark6" data-title="Scan History">
                         <img class="slider__img" src="./images/dark-mode/phone3.svg" />
                     </a>
                 </div>
