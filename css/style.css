@@ -245,6 +245,11 @@ body {
     padding-bottom: 1rem;
 }
 
+.hwiw-img__wrapper{
+    display: flex;
+    justify-content: center;
+}
+
 @media (max-width: 576px) {
     .hwiw__section {
         padding-left: 15px;

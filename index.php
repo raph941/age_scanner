@@ -83,28 +83,28 @@
         </p>
 
         <div class="media">
-            <span class="mr-3 col-12 col-sm-6">
+            <span class="mr-3 col-12 col-sm-6 d-flex justify-content-center">
                 <img class="hwiw__image" src="./images/how-it-works/phone2.svg" alt="Generic placeholder image">
             </span>
             <div class="col-12 col-sm-6 align-self-center hwiw_text__wrapper">
                 <span class="hwiw-media__text">
                     <img class="hwiw__icon" src="./images/icons/Group80.png" alt="icon"><br>
                     <h3 class="mt-0 pl-0 col-12 col-sm-6 hwiw__subtitle">Capturing</h3>
-                    <p>
+                    <p class="hwiw__text">
                         This stage takes an image of a person whom is in the focus of the camera or and gets the features of the face.
                     </p>
                 </span><br>
                 <span class="hwiw-media__text">
                     <img class="hwiw__icon" src="./images/icons/Group81.png" alt="icon">
                     <h3 class="mt-0 pl-0 col-12 col-sm-6 hwiw__subtitle">Scanning</h3>
-                    <p>
+                    <p class="hwiw__text">
                         During this the image taken or an existing image in the gallery is scanned to identfy the age of the individual within the picture.
                     </p>
                 </span><br>
                 <span class="hwiw-media__text">
                     <img class="hwiw__icon" src="./images/icons/process.png" alt="icon">
                     <h3 class="mt-0 pl-0 col-12 col-sm-6 hwiw__subtitle">Processing</h3>
-                    <p>
+                    <p class="hwiw__text">
                         This takes into all accounts all the features of the face that tells a persons age starting from the eyes, cheeks and lips and analyses the age from there.
                     </p>
                 </span>
