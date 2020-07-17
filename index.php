@@ -83,7 +83,7 @@
         </p>
 
         <div class="media">
-            <span class="mr-3 col-12 col-sm-6 d-flex justify-content-center">
+            <span class="mr-3 col-12 col-sm-6 d-flex justify-content-center align-self-center">
                 <img class="hwiw__image" src="./images/how-it-works/phone2.svg" alt="Generic placeholder image">
             </span>
             <div class="col-12 col-sm-6 align-self-center hwiw_text__wrapper">
@@ -234,30 +234,6 @@
     <!--custom js-->
     <script src="./js/main.js"></script>
     <script>
-
-    $('#form').submit(function(e){
-        e.preventDefault();
-        var email = $('#email').val()
-
-        $.ajax({
-        url: 'action.php',
-        method: "POST",
-        data: {
-            'email': email
-        },
-        success: function(data){
-            $('.alert__wrapper').html(
-                '<div class="alert alert-success alert-dismissible fade show" role="alert">Your email has been succesful submiitted. you would be notified when we kick off.<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>'
-            )
-        },
-        error: function(data){
-            $('.alert__wrapper').html(
-                '<div class="alert alert-danger alert-dismissible fade show" role="alert">An error occur during your email submission. please try again.<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>'
-
-            )
-        },
-        })
-    })
     </script>
 </body>
 
