@@ -121,43 +121,43 @@
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                    <a href="./images/screens/screen4.svg" data-lightbox="Slide4" data-title="Slide 4">
-                        <img class="slider__img" src="./images/screens/screen10.svg" />
+                    <a href="./images/screens/screen1.svg" data-lightbox="Slide1" data-title="Scan Image">
+                        <img class="slider__img" src="./images/screens/screen1.svg" />
                     </a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="./images/screens/screen2.svg" data-lightbox="Slide2" data-title="Slide 2">
+                    <a href="./images/screens/screen2.svg" data-lightbox="Slide2" data-title="Agereal Default Splash Screen">
                         <img class="slider__img" src="./images/screens/screen2.svg" />
                     </a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="./images/screens/screen3.svg" data-lightbox="Slide3" data-title="Slide 3">
+                    <a href="./images/screens/screen3.svg" data-lightbox="Slide3" data-title="Face Dectection">
                         <img class="slider__img" src="./images/screens/screen3.svg" />
                     </a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="./images/screens/screen5.svg" data-lightbox="Slide5" data-title="Slide 5">
+                    <a href="./images/screens/screen4.svg" data-lightbox="Slide4" data-title="Unable To Detect Face">
+                        <img class="slider__img" src="./images/screens/screen4.svg" />
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="./images/screens/screen5.svg" data-lightbox="Slide5" data-title="All Scannes">
                         <img class="slider__img" src="./images/screens/screen5.svg" />
                     </a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="./images/screens/screen6.svg" data-lightbox="Slide6" data-title="Slide 6">
+                    <a href="./images/screens/screen6.svg" data-lightbox="Slide6" data-title="Scan Completed">
                         <img class="slider__img" src="./images/screens/screen6.svg" />
                     </a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="./images/screens/screen7.svg" data-lightbox="Slide7" data-title="Slide 6">
+                    <a href="./images/screens/screen7.svg" data-lightbox="Slide7" data-title="Image Selection">
                         <img class="slider__img" src="./images/screens/screen7.svg" />
                     </a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="./images/screens/screen8.svg" data-lightbox="Slide8" data-title="Slide 6">
+                    <a href="./images/screens/screen8.svg" data-lightbox="Slide8" data-title="Facial Scann">
                         <img class="slider__img" src="./images/screens/screen8.svg" />
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="./images/screens/screen9.svg" data-lightbox="Slide9" data-title="Slide 6">
-                        <img class="slider__img" src="./images/screens/screen9.svg" />
                     </a>
                 </div>
                 
@@ -294,7 +294,7 @@
         lightbox.option({
             'resizeDuration': 200,
             'wrapAround': true,
-            'albumLabel': "Image",
+            'albumLabel': "Agereal App Screens",
             'disableScrolling': true,
             'maxHeight': 500,
             'positiionFromTop': 200
