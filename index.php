@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
     <!--swipper css-->
     <link rel="stylesheet" href="./assets/swiper/swiper.min.css">
+    <!-- Lightbox -->
+    <link rel="stylesheet" href="./assets/lightbox/css/lightbox.min.css">
     <!--custom css-->
     <link rel="stylesheet" href="./css/style.css">
 
@@ -44,10 +46,6 @@
         <div class="media">
             <div class="media-body col-12 col-sm-6 align-self-center">
                 <p class="hero__text">Determine the age of any individual with your mobile device.</p>
-                <span class="hero_btn__wrapper">
-                    <a href="#notify" class="btn hero_primary_btn">Notify me</a>
-                    <a href="#prototype" class="btn btn-outline-secondary hero_secondary_btn">Watch Prototype</a>
-                </span>
             </div>
             <br>
             <span class="col-12 col-sm-6 hero_media__wrapper">
@@ -122,14 +120,37 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide"><img class="slider__img" src="./images/screens/screens1.svg" /></div>
-                <div class="swiper-slide"><img class="slider__img" src="./images/screens/screens2.svg" /></div>
-                <div class="swiper-slide"><img class="slider__img" src="./images/screens/screens3.svg" /></div>
-                <div class="swiper-slide"><img class="slider__img" src="./images/screens/screens4.svg" /></div>
-                <div class="swiper-slide"><img class="slider__img" src="./images/screens/screens1.svg" /></div>
-                <div class="swiper-slide"><img class="slider__img" src="./images/screens/screens2.svg" /></div>
-                <div class="swiper-slide"><img class="slider__img" src="./images/screens/screens3.svg" /></div>
-
+                <div class="swiper-slide">
+                    <a href="./images/screens/screens1.svg" data-lightbox="Slide1" data-title="Slide 1">
+                        <img class="slider__img" src="./images/screens/screens1.svg" />
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="./images/screens/screens2.svg" data-lightbox="Slide2" data-title="Slide 2">
+                        <img class="slider__img" src="./images/screens/screens2.svg" />
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="./images/screens/screens3.svg" data-lightbox="Slide3" data-title="Slide 3">
+                        <img class="slider__img" src="./images/screens/screens3.svg" />
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="./images/screens/screens1.svg" data-lightbox="Slide4" data-title="Slide 4">
+                        <img class="slider__img" src="./images/screens/screens1.svg" />
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="./images/screens/screens2.svg" data-lightbox="Slide5" data-title="Slide 5">
+                        <img class="slider__img" src="./images/screens/screens5.svg" />
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="./images/screens/screens3.svg" data-lightbox="Slide6" data-title="Slide 6">
+                        <img class="slider__img" src="./images/screens/screens6.svg" />
+                    </a>
+                </div>
+                
             </div>
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
@@ -152,13 +173,37 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide"><img class="slider__img" src="./images/dark-mode/phone1.svg" /></div>
-                <div class="swiper-slide"><img class="slider__img" src="./images/dark-mode/phone2.svg" /></div>
-                <div class="swiper-slide"><img class="slider__img" src="./images/dark-mode/phone3.svg" /></div>
-                <div class="swiper-slide"><img class="slider__img" src="./images/dark-mode/phone1.svg" /></div>
-                <div class="swiper-slide"><img class="slider__img" src="./images/dark-mode/phone2.svg" /></div>
-                <div class="swiper-slide"><img class="slider__img" src="./images/dark-mode/phone3.svg" /></div>
-                <div class="swiper-slide"><img class="slider__img" src="./images/dark-mode/phone1.svg" /></div>
+
+                <div class="swiper-slide">
+                    <a href="./images/dark-mode/phone1.svg" data-lightbox="dark1" data-title="Dark Mode 1">
+                        <img class="slider__img" src="./images/dark-mode/phone1.svg" />
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="./images/dark-mode/phone2.svg" data-lightbox="dark2" data-title="Dark Mode 2">
+                        <img class="slider__img" src="./images/dark-mode/phone2.svg" />
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="./images/dark-mode/phone3.svg" data-lightbox="dark3" data-title="Dark Mode 3">
+                        <img class="slider__img" src="./images/dark-mode/phone3.svg" />
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="./images/dark-mode/phone1.svg" data-lightbox="dark4" data-title="Dark Mode 4">
+                        <img class="slider__img" src="./images/dark-mode/phone1.svg" />
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="./images/dark-mode/phone2.svg" data-lightbox="dark5" data-title="Dark Mode 5">
+                        <img class="slider__img" src="./images/dark-mode/phone2.svg" />
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="./images/dark-mode/phone3.svg" data-lightbox="dark6" data-title="Dark Mode 6">
+                        <img class="slider__img" src="./images/dark-mode/phone3.svg" />
+                    </a>
+                </div>
 
             </div>
             <!-- If we need pagination -->
@@ -231,9 +276,20 @@
     <!-- gsap Js -->
     <script src="./assets/gsap/gsap.min.js"></script>
     <script src="./assets/gsap/scrollTrigger.min.js"></script>
+    <!--Light Box-->
+    <script src="./assets/lightbox/js/lightbox.min.js"></script>
     <!--custom js-->
     <script src="./js/main.js"></script>
     <script>
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true,
+            'albumLabel': "Image",
+            'disableScrolling': true,
+            'maxWidth': 500,
+            'maxHeight': 500,
+            'positiionFromTop': 200
+          })
     </script>
 </body>
 

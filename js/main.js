@@ -100,3 +100,12 @@ gsap.from(".hwiw__text", {
           //options: play, pause, resume, reset, restart, complete, reverse,none
     }
 }) 
+
+
+// LightBox
+lightbox.option({
+  'resizeDuration': 200,
+  'wrapAround': true,
+  'albumLabel': "Image",
+  'disableScrolling': true,
+})
