@@ -65,13 +65,6 @@ var swiper = new Swiper('.swiper-container', {
 // GSAP Animations
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.from(".hero__img", {duration: 4, x: 00, opacity: 0, scale: 0.8});
-gsap.from(".dot__img2", {duration: 2, x: 300, opacity: 0, scale: 0.5});
-gsap.from(".nav__vector", {duration: 2, y: -300, opacity: 0});
-gsap.from(".hero__text", {duration: 4, y: 00, opacity: 0, scale:0.8});
-
-gsap.from(".dot__img1", {duration: 3, x: -300, opacity: 0, scale: 0.5});
-
 gsap.from(".hwiw__image", {
   scrollTrigger: ".hwiw__imgage", // start the animation when ".hwiw__imgage" enters the viewport (once)
   duration: 3, x: 00
@@ -99,13 +92,17 @@ gsap.from(".hwiw__text", {
       toggleActions: "restart pause restart pause",
           //options: play, pause, resume, reset, restart, complete, reverse,none
     }
-}) 
-
-
-// LightBox
-lightbox.option({
-  'resizeDuration': 200,
-  'wrapAround': true,
-  'albumLabel': "Image",
-  'disableScrolling': true,
 })
+
+gsap.from(".hero__img", {
+  duration: 2.0, y: 10,
+    scrollTrigger: {
+      trigger:".hero__img",
+      start:"top 75%", //when top of herman passes 75% viewport height
+      end:"bottom 25%", //when bottom of herman passes 25% viewport height
+           //events: onEnter onLeave onEnterBack onLeaveBack
+      toggleActions:"restart complete reverse reset"
+          //options: play, pause, resume, reset, restart, complete, reverse,none
+    }
+})
+
