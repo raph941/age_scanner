@@ -66,11 +66,7 @@ var swiper = new Swiper('.swiper-container', {
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.from(".hero__img", {duration: 4, x: 00, opacity: 0, scale: 0.8});
-gsap.from(".dot__img2", {duration: 2, x: 300, opacity: 0, scale: 0.5});
-gsap.from(".nav__vector", {duration: 2, y: -300, opacity: 0});
 gsap.from(".hero__text", {duration: 4, y: 00, opacity: 0, scale:0.8});
-
-gsap.from(".dot__img1", {duration: 3, x: -300, opacity: 0, scale: 0.5});
 
 gsap.from(".hwiw__image", {
   scrollTrigger: ".hwiw__imgage", // start the animation when ".hwiw__imgage" enters the viewport (once)
