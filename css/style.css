@@ -17,7 +17,7 @@ body {
     margin: 0 auto;
 }
 
-/* navbar */
+/* Navbar Starts */
 
 .navbar-brand {
     font-family: 'Aladin', cursive;
@@ -53,7 +53,9 @@ body {
     }
 }
 
-/* hero */
+/* Nabar Ends */
+
+/* hero starts */
 .form__title {
     font-weight: 300;
     line-height: 44px;
@@ -217,7 +219,7 @@ body {
     }
 }
 
-/* hero */
+/* hero ends */
 
 /* how it works start */
 .hwiw__section {
@@ -554,8 +556,6 @@ body {
     }
 }
 
-
-/* Tablet view */
 @media (min-width: 768px) and (max-width: 991.98px) {
     .hero__section {
         margin-top: -150px;
@@ -727,7 +727,3 @@ body {
         margin-bottom: 10px;
     }
 }
-
-
-/* Small devices (landscape phones, 576px and up)  */
-@media (min-width: 576px) and (max-width: 767.98px) {}
