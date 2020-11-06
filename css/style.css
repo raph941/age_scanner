@@ -17,7 +17,7 @@ body {
     margin: 0 auto;
 }
 
-/* Navbar Starts */
+/* navbar */
 
 .navbar-brand {
     font-family: 'Aladin', cursive;
@@ -53,9 +53,7 @@ body {
     }
 }
 
-/* Nabar Ends */
-
-/* hero starts */
+/* hero */
 .form__title {
     font-weight: 300;
     line-height: 44px;
@@ -219,7 +217,7 @@ body {
     }
 }
 
-/* hero ends */
+/* hero */
 
 /* how it works start */
 .hwiw__section {
@@ -556,6 +554,8 @@ body {
     }
 }
 
+
+/* Tablet view */
 @media (min-width: 768px) and (max-width: 991.98px) {
     .hero__section {
         margin-top: -150px;
